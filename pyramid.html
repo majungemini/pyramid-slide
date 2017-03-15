@@ -1,0 +1,76 @@
+<DOCTYPE html>
+<HTML>
+    <head>
+        <title>Pyramid Slide</title>
+        <style>
+        /*margin, padding, color, background-color,
+        border, border-radius, font-size, font-weight*/
+        body {
+            font-family: monospace;
+            margin-left: 20%;
+            padding: 10px;
+
+        }
+        div{
+            text-align: center;
+            width:60%;
+            left:10%;
+        }
+        #head {
+            background-color: Purple;
+            height: 50px;
+            width: 80%;
+
+        }
+        h1{
+            color:Gainsboro;
+            text-align: center;
+            padding-top: 10px;
+        }
+        #menuoutline {
+
+            /*border-style: solid;
+            border-color: Purple;
+            border-width: medium;*/
+            border: 3px solid Purple;
+            position: relative;
+            background-color: Lavender;
+        }
+        #menu {
+            background-color: LightGray;
+            height:50px;
+            width:100%
+
+
+        }
+        #pyramid {
+            /*background-color: Lavender;*/
+
+        }
+        </style>
+    </head>
+    <body>
+        <div id="head"><h1>Pyramid</h1></div>
+        <br><br>
+        <div id="menuoutline">
+            <div id="menu" style="padding-top:10px;">
+                <label>Brick Symbol: </lable>
+                <select id="outline">
+                    <option value="#">#</option>
+                    <option value="X">X</option>
+                    <option value="$">$</option>
+                    <option value="@">@</option>
+                </select>
+                <label>&nbsp;&nbsp;&nbsp;&nbsp;How high?</lable>
+                <input type="range" id="points" oninput="myFunction()" min="0" max="20">
+                <label><b id="heightofpyramid"></b></lable>
+            </div>
+            <div style="margin-left: 20%;"><b id="pyramid" style="color:Purple;"></b></div>
+
+        </div>
+        <script src="pyramid.js"></script>
+
+    </body>
+
+
+</HTML>
